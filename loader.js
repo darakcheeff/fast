@@ -22,6 +22,9 @@ if(('    '+document.location.href).indexOf('http://fttb.mts-nn.ru/')>1){
 	getUrl='fttbnn';
 }
 
+if(document.location.href.split("fonbet.ru").length==2){getUrl='fonbet';}
+
+
 if(getUrl.length>1){
 	versionTxt=httpGet(mainUrl+'version.json');
 	var versionData=JSON.parse(versionTxt);
