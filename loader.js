@@ -25,7 +25,7 @@ if(('    '+document.location.href).indexOf('http://fttb.mts-nn.ru/')>1){
 if(document.location.href.split("fonbet.ru").length==2){getUrl='fonbet';}
 
 
-if(getUrl.length>1){
+if(getUrl){
 	versionTxt=httpGet(mainUrl+'version.json');
 	var versionData=JSON.parse(versionTxt);
 	actoinScript=mainUrl+getUrl+'.'+versionData[getUrl]+'.js';
