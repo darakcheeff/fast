@@ -1,6 +1,6 @@
 
 range = prompt("Укажите пороговое значение:");
-a=$(".table").children;
+a=document.getElementsByTagName("table")[0].children;
 for (i = 0; i < a.length; i++) {
     for (ii = 1; ii < a[i].children.length; ii++){
         for (iii = 2; iii < a[i].children[ii].children.length; iii++) {
